@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+#topo{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#dv1{
+    
+    width: 50%; 
+    height: 100%;
+    background-color: black;
+    position: relative;
+    left: 0%;
+    padding: 10px;
+}
+
+#dv1 img{
+    width: 100%;
+}
+
+#dv1 h1 , h2{
+    color: orange;
+}
+
+#dv1 nav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dv1 nav button{
+    transition: 1s;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.btna{
+    transition: 1s;
+    margin-top: 100px;
+}
+
+#dv2{
+    
+    width: 50%;
+    height: 100%;
+    background-color: orange;
+    position: relative;
+    left: 0%;
+}
+
+.dvnormal{
+    transition: 2s;
+    width: 0%;
+}
+
+.dv1a{
+    transition: 2s;
+    left: 50% !important;
+}    
+
+.dv2a{
+    transition: 2s;
+    left: -50% !important;
+}
+
+.hover{
+    transition: 1s;
+    width: 80% !important;
+}
+
+.hoverout{
+    transition: 1s;
+}
+
+
+
