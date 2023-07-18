@@ -12,12 +12,19 @@
         <section id="topo">
             <div id="dv1">
                 <img src="imgs/Pornhub-logo.svg.png" alt="">
-                <h1>Seja bem vindo, para o nosso site</h1>
-                <h2>se voce ja fez o cadastro click no login e insira as informações do seu cadrasto, se ainda não fez click no cadastro e insira suas informações</h2>
-
-                <nav>
-                  <button id="btn_login">Login</button>
-                  <button id="btn_cadastro">Cadasto</button>
+                <h1 id="tela">Seja bem vindo</h1>
+                <h2 id="subtela">se voce ja fez o cadastro click no login e insira as informações do seu cadrasto, se ainda não fez click no cadastro e insira suas informações</h2>
+                
+                <form id="finome">
+                    <input type="text" name="" id="inome" placeholder="Login">
+                    <input type="password" name="" id="isenha" placeholder="Senha">
+                </form>
+                
+                <nav id="nav">
+                  <button class="button" id="btn">Login</button>
+                  <button class="button" id="btn_enviar" style="display: none;">Enviar</button>
+                  <button class="button" id="btn_cadastro">Cadasto</button>
+                
                 </nav>
             </div>
             
@@ -27,7 +34,7 @@
         </section>
 
         <form>
-            <input id="btn" type="button" value="enviar">
+            <input id="bt" type="button" value="enviar">
         </form>
 
     </main>
