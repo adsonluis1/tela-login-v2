@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -8,198 +8,164 @@ main{
     position: absolute;
     left: 50%;
     top: 50%;
+    transform: translate(-50% , -50%);
 
-    transform: translate(-50%,-50%);
+    width: 90%;
+    max-width: 600px;
+    height: 500px;
+    background-color: blue;
 }
 
-#topo{
-    width: 500px;
-    height: 500px;
-    background-color: white;
+#all{
     display: flex;
     flex-direction: row;
-    
 }
 
-#dv1{
-    
-    width: 50%; 
-    height: 100%;
+#login{
+    transition: 1s;
+    width: 50%;
     background-color: black;
-    position: relative;
-    left: 0%;
+    color: orange;
+    height: 500px;
     padding: 10px;
 }
 
-#dv1 img{
-    width: 100%;
+.login_big{
+    transition: 1s;
+    width: 75% !important;
 }
 
-#dv1 h1{
-    font-size: 2em;
-    margin-bottom: 10px;
+#login h1, #registro h1{
+    font-size: 2.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#dv1 h1 , h2{
-    color: orange;
+#login h2, #registro h2{
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#dv1 nav{
-    width: 100%;
-    height: 20%;
+#form_login , #form_registro{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button{
-    transition: 1s;
-    /* 
-    padding: 5px;
-    border-radius: 5px;
-    background-color: orange;
-    color: black;
-    font-weight: bold;
-    border: 1px solid black; */
-    margin-right: 10px;
-  position: relative;
-  padding: 5px;
-  border-radius: 7px;
-  border: 1px solid white;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  background: transparent;
-  color: #fff;
-  overflow: hidden;
-  box-shadow: 0 0 0 0 transparent;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.button:hover {
-    background: orange;
-    box-shadow: 0 0 30px 5px rgb(255, 195, 84);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-  
-  .button:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-  }
-  
-  .button::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-  }
-  
-  @keyframes sh02 {
-    from {
-      opacity: 0;
-      left: 0%;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      left: 100%;
-    }
-  }
-  
-  .button:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
-  }
-
-.btna{
-    transition: 1s;
+    flex-direction: column;
     margin-top: 100px;
 }
 
-#dv2{
-    
-    width: 50%;
-    height: 100%;
+#form_login input , #form_registro input{
+    padding: 6px;
+}
+
+#login_inome , #registro_inome , #registro_isenha{
+    margin-bottom: 10px;
+}
+
+#login_isenha{
+    margin-bottom: 60px;
+}
+
+#login_btn_entrar , #registro_btn_entrar{
+    margin-bottom: 10px;
+}
+
+/* animação buttons */
+.btn {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+   }
+   
+   .btn:hover {
+    letter-spacing: 3px;
     background-color: orange;
-    position: relative;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(255, 194, 80) 0px 7px 29px 0px;
+   }
+   
+   .btn:active {
+    letter-spacing: 3px;
+    background-color: orange;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(255, 194, 80) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 5000ms;
+   }
+
+#registro{
+    width: 50%;
+    background-color: black;
+    color: orange;
+    height: 500px;
+    padding: 10px;
+} 
+
+.registro_big{
+    transition: 1s;
+    width: 60% !important;
+}
+
+#registro_confirmarsenha{
+    margin-bottom: 20px;
+}
+
+#passa{
+    transition: 1s;
+    background-color: black;
+    background-image: url(imgs/Pornhub-logo.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: orange;
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     left: 0%;
 }
 
-.dvnormal{
-    transition: 2s;
-    width: 0%;
+.passa_lit_login{
+    transition: 1s;
+    width: 40% !important;
+    left: 60% !important;
 }
 
-.dv1a{
+.passa_lit_registro{
+    transition: 1s;
+    width: 40% !important;
+    left: 60% !important;
+}
+
+#form_passa{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 50%;
+}
+
+#passa_btn_login{
+    margin-right: 30px;
+}
+
+/* animação */
+.passa_anima{
     transition: 2s;
+    width: 50% !important;
     left: 50% !important;
-}    
+}
 
-.dv2a{
+.passa_anima2{
     transition: 2s;
-    left: -50% !important;
+    width: 50% !important;
+    left: 0% !important;
 }
 
-.hover{
+.registro_lit{
     transition: 1s;
-    width: 80% !important;
-}
-
-.hoverout{
-    transition: 1s;
-}
-
-#finome{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-} 
-
-#inome{
-    transition: 1s;
-    height: 20px;
-    border-radius: 5px;
-    border: 2px solid black;
-    padding: 20px 10px;
-}
-
-#isenha{
-    transition: 1s;
-    height: 20px;
-    border-radius: 5px;
-    border: 2px solid black;
-    padding: 20px 10px;
-}
-
-.pequeno{
-    transition: 1s;
-    padding: 15px 10px !important;
-}
-  
-.nav{
-    display: flex;
-    flex-direction: column;
+    width: 20% !important;
 }

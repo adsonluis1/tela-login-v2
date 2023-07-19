@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+#topo{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#dv1{
+    
+    width: 50%; 
+    height: 100%;
+    background-color: black;
+    position: relative;
+    left: 0%;
+    padding: 10px;
+}
+
+#dv1 img{
+    width: 100%;
+}
+
+#dv1 h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#dv1 h1 , h2{
+    color: orange;
+}
+
+#dv1 nav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    transition: 1s;
+    /* 
+    padding: 5px;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black; */
+    margin-right: 10px;
+  position: relative;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.button:hover {
+    background: orange;
+    box-shadow: 0 0 30px 5px rgb(255, 195, 84);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+
+.btna{
+    transition: 1s;
+    margin-top: 100px;
+}
+
+#dv2{
+    
+    width: 50%;
+    height: 100%;
+    background-color: orange;
+    position: relative;
+    left: 0%;
+}
+
+.dvnormal{
+    transition: 2s;
+    width: 0%;
+}
+
+.dv1a{
+    transition: 2s;
+    left: 50% !important;
+}    
+
+.dv2a{
+    transition: 2s;
+    left: -50% !important;
+}
+
+.hover{
+    transition: 1s;
+    width: 80% !important;
+}
+
+.hoverout{
+    transition: 1s;
+}
+
+#finome{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+} 
+
+#inome{
+    transition: 1s;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 20px 10px;
+}
+
+#isenha{
+    transition: 1s;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 20px 10px;
+}
+
+.pequeno{
+    transition: 1s;
+    padding: 15px 10px !important;
+}
+  
+.nav{
+    display: flex;
+    flex-direction: column;
+}
