@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 
-main{
+body{
+    background-color: rgb(41, 41, 41);
+}
+
+.main{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
 
-    width: 90%;
-    max-width: 600px;
-    height: 500px;
-    background-color: blue;
+    width: 90% !important;
+    max-width: 600px !important;
+    height: 500px !important;
+    background-color: blue !important;
 }
 
 #all{
@@ -45,6 +49,10 @@ main{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#login_aviso{
+    margin-bottom: 60px;
+}
+
 #form_login , #form_registro{
     display: flex;
     flex-direction: column;
@@ -57,10 +65,6 @@ main{
 
 #login_inome , #registro_inome , #registro_isenha{
     margin-bottom: 10px;
-}
-
-#login_isenha{
-    margin-bottom: 60px;
 }
 
 #login_btn_entrar , #registro_btn_entrar{
@@ -109,7 +113,7 @@ main{
     width: 60% !important;
 }
 
-#registro_confirmarsenha{
+#registro_aviso{
     margin-bottom: 20px;
 }
 
@@ -119,7 +123,6 @@ main{
     background-image: url(imgs/Pornhub-logo.svg.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
     color: orange;
     width: 100%;
     height: 500px;
@@ -137,15 +140,15 @@ main{
 
 .passa_lit_registro{
     transition: 1s;
-    width: 40% !important;
-    left: 60% !important;
+    width: 45% !important;
+    left: 0% !important;
 }
 
 #form_passa{
     display: flex;
     align-items: end;
     justify-content: center;
-    height: 50%;
+    height: 70%;
 }
 
 #passa_btn_login{
@@ -169,3 +172,114 @@ main{
     transition: 1s;
     width: 20% !important;
 }
+
+/* segunda pagina */
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+#conteudo{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#conteudo header{
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#conteudo img{
+    width: 100px;
+    height: 50px;
+}
+
+#conteudo h1{
+    color: orange;
+    font-size: 2em;
+}
+
+/* spinner */
+
+#div_spinner{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(41, 41, 41, 0.568);
+    position: absolute;
+}
+
+.spinner {
+    --size: 30px;
+    --first-block-clr: black;
+    --second-block-clr: orange;
+    --clr: #111111;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50% , -50%);
+   }
+   
+   .spinner::after,.spinner::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    width: var(--size);
+    height: var(--size);
+    top: 50%;
+    animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+    left: 50%;
+    background: var(--first-block-clr);
+   }
+   
+   .spinner::after {
+    background: var(--second-block-clr);
+    top: calc(50% - var(--size));
+    left: calc(50% - var(--size));
+    animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+   }
+   
+   @keyframes down {
+    0%, 100% {
+     transform: none;
+    }
+   
+    25% {
+     transform: translateX(100%);
+    }
+   
+    50% {
+     transform: translateX(100%) translateY(100%);
+    }
+   
+    75% {
+     transform: translateY(100%);
+    }
+   }
+   
+   @keyframes up {
+    0%, 100% {
+     transform: none;
+    }
+   
+    25% {
+     transform: translateX(-100%);
+    }
+   
+    50% {
+     transform: translateX(-100%) translateY(-100%);
+    }
+   
+    75% {
+     transform: translateY(-100%);
+    }
+   }
+   

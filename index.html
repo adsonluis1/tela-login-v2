@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-
+    <main class="main">
+       
         <div id="passa">
-            <h1>Olá essa é a area de identificação do site</h1>
-            <h2>Se voce ja fez o seu registro click em login, se ainda não, click em cadastro para criar um</h2>
+            <!-- <h1>Olá essa é a area de identificação do site</h1>
+            <h2>Se voce ja fez o seu registro click em login, se ainda não, click em cadastro para criar um</h2> -->
             <form id="form_passa">
                 <input type="button" value="Login" class="btn" id="passa_btn_login">
                 <input type="button" value="registro" class="btn" id="passa_btn_registro">
@@ -25,6 +25,7 @@
                 <form id="form_login">
                     <input type="text" name="" id="login_inome" placeholder="Nome">
                     <input type="password" name="" id="login_isenha" placeholder="Senha">
+                    <p id="login_aviso"></p>
                     <input type="button" value="Entrar" class="btn" id="login_btn_entrar">
                     <input type="button" value="cadastrar" class="btn" id="login_btn_cadastrar">
                 </form>
@@ -37,12 +38,26 @@
                     <input type="text" name="" id='registro_inome' placeholder="Nome">
                     <input type="password" name="" id="registro_isenha" placeholder="Senha">
                     <input type="password" name="" id="registro_confirmarsenha" placeholder="Confirme senha">
+                    <p id="registro_aviso"></p>
                     <input type="button" value="Cadastrar" class="btn" id="registro_btn_entrar">
                     <input type="button" value="Login" class="btn" id="registro_btn_login">
                 </form>
             </div>
+
+        </section>
+
+        <section id="conteudo">
+            <header>
+                <img src="logo-fundo-branco-c.png" alt="logo_pornhub">
+            </header>
+
+            <div><h1>ola ola <span id="span"></span> so era um teste msm</h1></div>
         </section>
     </main>
+
+    <div id="div_spinner" style="display: none;">
+        <div id="spinner" class="spinner"></div>
+    </div>
 </body>
 <script src="index.js"></script>
 </html>
